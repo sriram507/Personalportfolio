@@ -1,0 +1,25 @@
+/* Custom Styles */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero-section {
+    background-color: #007bff;
+    padding: 100px 0;
+  }
+  
+  .navbar {
+    margin-bottom: 0;
+  }
+  
+  .card {
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    background-color: #343a40;
+  }
