@@ -3,18 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio - MERN Full-Stack Developer</title>
+  <meta name="description" content="Sriram Injarapu - Software Full-Stack MERN Developer with 1+ years of experience in building scalable web applications.">
+  <meta name="keywords" content="MERN Stack, Full-Stack Developer, React, Node.js, MongoDB, Express.js, Web Development">
+  <meta name="author" content="Sriram Injarapu">
+  <meta name="theme-color" content="#4A148C"> <!-- Theme color for mobile browsers -->
+  <title>Sriram Injarapu - Software Full-Stack MERN Developer</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Custom CSS for consistent spacing */
+    section {
+      padding: 80px 0; /* Adds 80px padding to the top and bottom of each section */
+    }
+    .hero-section {
+      padding: 150px 0 100px; /* Custom padding for the hero section */
+    }
+    .cta-section {
+      padding: 100px 0; /* Custom padding for the call-to-action section */
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">Personal Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand" href="#">Full-Stack MERN Developer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -29,6 +47,9 @@
             <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="#certifications">Certifications</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
@@ -37,40 +58,40 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero-section text-white text-center py-5">
+  <section class="hero-section text-white text-center bg-primary">
     <div class="container">
-      <h1 class="display-4 fade-in">Hello, I'm Sriram Injarapu</h1>
-      <p class="lead fade-in">A MERN Full-Stack Developer with 3+ years of experience</p>
-      <a href="#projects" class="btn btn-light btn-lg fade-in">View My Work</a>
+      <h1 class="display-4">Hello, I'm Sriram Injarapu</h1>
+      <p class="lead">Software Full-Stack MERN Developer with 1+ Years of Hands-On Experience</p>
+      <a href="#projects" class="btn btn-light btn-lg" aria-label="View My Work">View My Work</a>
     </div>
   </section>
 
   <!-- About Me Section -->
-<section id="about" class="py-5 fade-in">
+  <section id="about">
     <div class="container">
       <h2 class="text-center mb-4">About Me</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="/assets/images/WhatsApp Image 2023-05-10 at 11.55.57.jpeg" alt="profile photo" class="img-fluid rounded-circle">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <img src="./assets/images/WhatsApp Image 2023-05-10 at 11.55.57.jpeg" alt="Sriram Injarapu" class="img-fluid rounded-circle profile-image" loading="lazy">
         </div>
         <div class="col-md-6">
           <p class="lead">
-            Hi, I'm <strong>Your Name</strong>, a passionate <strong>MERN Full-Stack Developer</strong> with <strong>3+ years of experience</strong> in building scalable and dynamic web applications.
+            Hi, I'm <strong>Sriram Injarapu</strong>, a <strong>Software Full-Stack MERN Developer</strong> with <strong>1+ years of hands-on experience</strong> in building scalable and dynamic web applications.
           </p>
           <p>
-            I specialize in the <strong>MERN stack</strong> (MongoDB, Express.js, React, Node.js) and have a strong foundation in both front-end and back-end development. I love creating seamless user experiences and robust server-side solutions.
+            I specialize in the <strong>MERN stack</strong> (MongoDB, Express.js, React, Node.js) and have a strong foundation in both front-end and back-end development. Over the past year, I've worked on real-world projects, collaborated with teams, and delivered high-quality solutions.
           </p>
           <p>
-            As a <strong>freelancer</strong>, I've worked with clients worldwide, delivering end-to-end solutions tailored to their needs. Whether it's a full-stack application, REST API, or a dynamic front-end, I bring ideas to life with clean, efficient code.
+            I'm passionate about creating seamless user experiences and robust server-side solutions. I'm eager to bring my skills and enthusiasm to a dynamic organization.
           </p>
-          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#contact" class="btn btn-primary" aria-label="Get in Touch">Get in Touch</a>
         </div>
       </div>
     </div>
   </section>
-  
+
   <!-- Skills Section -->
-  <section id="skills" class="bg-light py-5 fade-in">
+  <section id="skills" class="bg-light">
     <div class="container">
       <h2 class="text-center mb-4">Skills</h2>
       <div class="row">
@@ -80,7 +101,6 @@
             <li>React.js</li>
             <li>HTML, CSS, JavaScript</li>
             <li>Bootstrap, Tailwind CSS</li>
-            <li>Redux, Context API</li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -88,15 +108,12 @@
           <ul>
             <li>Node.js, Express.js</li>
             <li>REST APIs, GraphQL</li>
-            <li>Authentication (JWT, OAuth)</li>
-            <li>WebSockets, Socket.io</li>
           </ul>
         </div>
         <div class="col-md-4">
           <h5>Database & Tools</h5>
           <ul>
-            <li>MongoDB, Mongoose</li>
-            <li>PostgreSQL, MySQL</li>
+            <li>MongoDB, SQL</li>
             <li>Git, GitHub</li>
             <li>Postman, Docker</li>
           </ul>
@@ -104,87 +121,150 @@
       </div>
     </div>
   </section>
-  
+
   <!-- Projects Section -->
-  <section id="projects" class="py-5 fade-in">
+  <section id="projects">
     <div class="container">
       <h2 class="text-center mb-4">Projects</h2>
       <div class="row">
         <!-- Project 1 -->
         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./assets/images/DALL·E 2024-12-26 18.09.03 - A clean and modern web application interface showcasing a dynamic workspace finder website. The page includes a navigation bar at the top, a prominent.webp" class="card-img-top" alt="Project 1">
+          <div class="card h-100">
+            <img src="./assets/images/Your paragraph text.png" class="card-img-top" alt="E-Commerce Platform" loading="lazy">
             <div class="card-body">
               <h5 class="card-title">E-Commerce Platform</h5>
               <p class="card-text">A full-stack e-commerce platform built with React, Node.js, Express, and MongoDB.</p>
-              <p class="card-text"><strong>Features:</strong> User authentication, product search, cart functionality, payment integration.</p>
-              <a href="#" class="btn btn-primary">Live Demo</a>
-              <a href="#" class="btn btn-secondary">GitHub</a>
+              <p class="card-text"><strong>Features:</strong> User authentication, product search, cart functionality.</p>
+              <a href="#" class="btn btn-primary" aria-label="Live Demo of E-Commerce Platform">Live Demo</a>
+              <a href="#" class="btn btn-secondary" aria-label="GitHub Repository of E-Commerce Platform">GitHub</a>
             </div>
           </div>
         </div>
         <!-- Project 2 -->
         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./assets/images/Your paragraph text.png" class="card-img-top" alt="Project 2">
+          <div class="card h-100">
+            <img src="./assets/images/DALL·E 2024-12-26 18.09.03 - A clean and modern web application interface showcasing a dynamic workspace finder website. The page includes a navigation bar at the top, a prominent.webp" class="card-img-top" alt="Social Media App" loading="lazy">
             <div class="card-body">
               <h5 class="card-title">Social Media App</h5>
               <p class="card-text">A MERN stack social media application with real-time updates.</p>
               <p class="card-text"><strong>Features:</strong> User profiles, posts, comments, likes, and notifications.</p>
-              <a href="#" class="btn btn-primary">Live Demo</a>
-              <a href="#" class="btn btn-secondary">GitHub</a>
+              <a href="#" class="btn btn-primary" aria-label="Live Demo of Social Media App">Live Demo</a>
+              <a href="#" class="btn btn-secondary" aria-label="GitHub Repository of Social Media App">GitHub</a>
             </div>
           </div>
         </div>
         <!-- Project 3 -->
         <div class="col-md-4 mb-4">
-          <div class="card">
-            <img src="./assets/images/stock-vector-week-of-the-days-list-week-day-pie-chart-for-kindergarten-people-learning-concept-for-kids-2183314437.jpg" class="card-img-top" alt="Project 3">
+          <div class="card h-100">
+            <img src="./assets/images/stock-vector-week-of-the-days-list-week-day-pie-chart-for-kindergarten-people-learning-concept-for-kids-2183314437.jpg" class="card-img-top" alt="Task Management App" loading="lazy">
             <div class="card-body">
               <h5 class="card-title">Task Management App</h5>
               <p class="card-text">A task management app built with React, Node.js, and MongoDB.</p>
               <p class="card-text"><strong>Features:</strong> Task creation, editing, and deletion; user authentication.</p>
-              <a href="#" class="btn btn-primary">Live Demo</a>
-              <a href="#" class="btn btn-secondary">GitHub</a>
+              <a href="#" class="btn btn-primary" aria-label="Live Demo of Task Management App">Live Demo</a>
+              <a href="#" class="btn btn-secondary" aria-label="GitHub Repository of Task Management App">GitHub</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Certifications</h2>
+      <div class="row">
+        <!-- Certification 1 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="./assets/images/Injarapu Sriram.png" class="card-img-top" alt="Fullstack Development Program Certificate" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Fullstack Development Program</h5>
+              <p class="card-text">Completed an intensive Fullstack Development Program, gaining expertise in building end-to-end web applications using the MERN stack (MongoDB, Express.js, React, Node.js).</p>
+              <a href="#" class="btn btn-primary" aria-label="View Fullstack Development Program Certificate">View Certificate</a>
+            </div>
+          </div>
+        </div>
+        <!-- Certification 2 -->
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="./assets/images/AI.jpeg" class="card-img-top" alt="Freedom with AI Masterclass Certificate" loading="lazy">
+            <div class="card-body">
+              <h5 class="card-title">Freedom with AI Masterclass</h5>
+              <p class="card-text">Participated in the Freedom with AI Masterclass, where I learned to integrate AI and machine learning into web applications.</p>
+              <a href="#" class="btn btn-primary" aria-label="View Freedom with AI Masterclass Certificate">View Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-to-Action Section -->
+  <section class="cta-section text-white text-center bg-primary">
+    <div class="container">
+      <h2 class="mb-4">Let's Build Something Amazing Together</h2>
+      <p class="lead">I'm actively looking for new opportunities. Let's connect!</p>
+      <a href="#contact" class="btn btn-light btn-lg" aria-label="Get in Touch">Get in Touch</a>
+    </div>
+  </section>
+
   <!-- Contact Section -->
-  <section id="contact" class="bg-light py-5 fade-in">
+  <section id="contact" class="bg-light">
     <div class="container">
       <h2 class="text-center mb-4">Contact Me</h2>
       <form>
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" required>
+          <input type="text" class="form-control" id="name" aria-describedby="nameHelp" required>
+          <div id="nameHelp" class="form-text">Please enter your full name.</div>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" required>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
           <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="5" required></textarea>
+          <textarea class="form-control" id="message" rows="5" aria-describedby="messageHelp" required></textarea>
+          <div id="messageHelp" class="form-text">Feel free to ask me anything!</div>
         </div>
         <button type="submit" class="btn btn-primary">Send Message</button>
       </form>
     </div>
   </section>
+
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
+  <footer class="footer text-white text-center py-3 bg-dark">
     <div class="container">
-      <p>&copy; 2025 Your Name. All rights reserved.</p>
+      <p>&copy; 2025 Sriram Injarapu. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/sriram507" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sriram-injarapu-917246234/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://your-portfolio.com" target="_blank" rel="noopener noreferrer" aria-label="Portfolio"><i class="fas fa-globe"></i></a>
+      </div>
     </div>
   </footer>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <!-- Smooth Scroll -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
   <!-- Custom JS -->
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
