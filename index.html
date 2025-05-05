@@ -3,268 +3,600 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sriram Injarapu - Software Full-Stack MERN Developer with 1+ years of experience in building scalable web applications.">
-  <meta name="keywords" content="MERN Stack, Full-Stack Developer, React, Node.js, MongoDB, Express.js, Web Development">
-  <meta name="author" content="Sriram Injarapu">
-  <meta name="theme-color" content="#4A148C"> <!-- Theme color for mobile browsers -->
-  <title>Sriram Injarapu - Software Full-Stack MERN Developer</title>
+  <meta name="description" content="[Your Name] - MERN Stack Developer with 1+ years of experience building modern web applications">
+  <meta name="keywords" content="MERN Developer, JavaScript, React, Node.js, MongoDB, Portfolio">
+  <title>[Sriram Injarapu] | Full-Stack MERN Developer</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Custom CSS for consistent spacing */
-    section {
-      padding: 80px 0; /* Adds 80px padding to the top and bottom of each section */
-    }
-    .hero-section {
-      padding: 150px 0 100px; /* Custom padding for the hero section */
-    }
-    .cta-section {
-      padding: 100px 0; /* Custom padding for the call-to-action section */
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration (ms)
+    once: true,     // animate only once
+  });
+</script>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Full-Stack MERN Developer</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#certifications">Certifications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+  
+ <!-- Navigation -->
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <div class="d-flex align-items-center">
+        <!-- Logo / Initials -->
+        <div class="brand-initials me-2 text-gradient fw-bold fs-4">ISR</div>
+        <div>
+          <span class="brand-title text-gradient">Full-Stack MERN Developer</span>
+        </div>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+      <div class="ms-lg-3 mt-3 mt-lg-0">
+        <a href="#contact" class="btn btn-primary px-4 py-2">
+          <i class="fas fa-paper-plane me-2"></i>Hire Me
+        </a>
       </div>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Hero Section -->
-  <section class="hero-section text-white text-center bg-primary">
-    <div class="container">
-      <h1 class="display-4">Hello, I'm Sriram Injarapu</h1>
-      <p class="lead">Software Full-Stack MERN Developer with 1+ Years of Hands-On Experience</p>
-      <a href="#projects" class="btn btn-light btn-lg" aria-label="View My Work">View My Work</a>
-    </div>
-  </section>
-
-  <!-- About Me Section -->
-  <section id="about">
-    <div class="container">
-      <h2 class="text-center mb-4">About Me</h2>
-      <div class="row align-items-center">
-        <div class="col-md-6 text-center">
-          <img src="./assets/images/WhatsApp Image 2023-05-10 at 11.55.57.jpeg" alt="Sriram Injarapu" class="img-fluid rounded-circle profile-image" loading="lazy">
+  <section class="hero-section bg-primary text-white text-center d-flex align-items-center justify-content-center min-vh-100">
+    <div class="container" data-aos="fade-up">
+      <div class="hero-content">
+        <h1 class="display-3 fw-bold">Hi, I'm <span class="text-warning">Sriram Injarapu</span></h1>
+        <h2 class="lead fs-4">
+          <span id="typing-text" class="typed-text">Full-Stack MERN Developer | JavaScript Enthusiast</span>
+        </h2>
+        <p class="mt-3 fs-5">I build responsive, performant web applications with modern technologies.</p>
+        <div class="mt-4">
+          <a href="#contact" class="btn btn-light btn-lg me-3">Hire Me</a>
+          <a href="#projects" class="btn btn-outline-light btn-lg">My Work</a>
         </div>
-        <div class="col-md-6">
-          <p class="lead">
-            Hi, I'm <strong>Sriram Injarapu</strong>, a <strong>Software Full-Stack MERN Developer</strong> with <strong>1+ years of hands-on experience</strong> in building scalable and dynamic web applications.
-          </p>
-          <p>
-            I specialize in the <strong>MERN stack</strong> (MongoDB, Express.js, React, Node.js) and have a strong foundation in both front-end and back-end development. Over the past year, I've worked on real-world projects, collaborated with teams, and delivered high-quality solutions.
-          </p>
-          <p>
-            I'm passionate about creating seamless user experiences and robust server-side solutions. I'm eager to bring my skills and enthusiasm to a dynamic organization.
-          </p>
-          <a href="#contact" class="btn btn-primary" aria-label="Get in Touch">Get in Touch</a>
-        </div>
+      </div>
+      <div class="scroll-down">
+        <a href="#about" class="text-white"><i class="fas fa-chevron-down"></i></a>
       </div>
     </div>
   </section>
+ 
+  <!-- ===== About Section ===== -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-grid">
+      
+      <!-- Profile Image -->
+      <div class="profile-image-container image-wrapper">
+        <div class="image-decoration image-decoration-1"></div>
+        <div class="image-decoration image-decoration-2"></div>
+        <img src="./assets/images/WhatsApp Image 2023-05-10 at 11.55.57.jpeg" alt="Profile" class="profile-image" />
+        <div class="image-badge">
+          <i class="fas fa-code"></i> Developer
+        </div>
+      </div>
+
+      <!-- About Content -->
+      <div class="about-content">
+        <h2 class="about-title">About Me</h2>
+        <p class="about-text">
+          I'm a <span class="highlight">Full-Stack MERN Developer</span> who loves building clean and scalable applications.
+          I specialize in crafting engaging user experiences and robust backend APIs.
+          With a passion for <span class="highlight">problem solving</span> and modern web tech,
+          I constantly explore and improve.
+        </p>
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-paper-plane me-2"></i> Let's Connect
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- Skills Section -->
-  <section id="skills" class="bg-light">
+  <section id="skills" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Skills</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <h5>Front-End</h5>
-          <ul>
-            <li>React.js</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Bootstrap, Tailwind CSS</li>
-          </ul>
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <h2 class="text-primary fw-bold">Technical Skills</h2>
+        <p class="text-muted">Technologies I work with</p>
+      </div>
+      
+      <div class="row g-4">
+        <!-- Frontend Skills -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h4 class="text-center fw-bold mb-4 text-primary">Frontend</h4>
+              
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-medium">
+                    <i class="fab fa-react text-primary me-2"></i> React.js
+                  </span>
+                  <span class="text-muted">85%</span>
+                </div>
+                <div class="progress" style="height: 8px;">
+                  <div class="progress-bar bg-primary progress-bar-striped" role="progressbar" style="width: 85%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-medium">
+                    <i class="fab fa-js-square text-warning me-2"></i> JavaScript
+                  </span>
+                  <span class="text-muted">80%</span>
+                </div>
+                <div class="progress" style="height: 8px;">
+                  <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 80%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-medium">
+                    <i class="fab fa-html5 text-danger me-2"></i> HTML5
+                  </span>
+                  <span class="text-muted">90%</span>
+                </div>
+                <div class="progress" style="height: 8px;">
+                  <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 90%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-medium">
+                    <i class="fab fa-css3-alt text-info me-2"></i> CSS3
+                  </span>
+                  <span class="text-muted">85%</span>
+                </div>
+                <div class="progress" style="height: 8px;">
+                  <div class="progress-bar bg-info progress-bar-striped" role="progressbar" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h5>Back-End</h5>
-          <ul>
-            <li>Node.js, Express.js</li>
-            <li>REST APIs, GraphQL</li>
-          </ul>
+
+        <!-- Backend Skills -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h4 class="text-center fw-bold mb-4 text-success">Backend</h4>
+              
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-medium">
+                    <i class="fab fa-node text-success me-2"></i> Node.js
+                  </span>
+                  <span class="text-muted">80%</span>
+                </div>
+                <div class="progress" style="height: 8px;">
+                  <div class="progress-bar bg-success progress-bar-striped" role="progressbar" style="width: 80%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-medium">
+                    <i class="fas fa-server text-dark me-2"></i> Express.js
+                  </span>
+                  <span class="text-muted">75%</span>
+                </div>
+                <div class="progress" style="height: 8px;">
+                  <div class="progress-bar bg-dark progress-bar-striped" role="progressbar" style="width: 75%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-medium">
+                    <i class="fas fa-key text-warning me-2"></i> Authentication
+                  </span>
+                  <span class="text-muted">75%</span>
+                </div>
+                <div class="progress" style="height: 8px;">
+                  <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 75%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-medium">
+                    <i class="fas fa-plug text-primary me-2"></i> REST APIs
+                  </span>
+                  <span class="text-muted">80%</span>
+                </div>
+                <div class="progress" style="height: 8px;">
+                  <div class="progress-bar bg-primary progress-bar-striped" role="progressbar" style="width: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h5>Database & Tools</h5>
-          <ul>
-            <li>MongoDB, SQL</li>
-            <li>Git, GitHub</li>
-            <li>Postman, Docker</li>
-          </ul>
+
+        <!-- Database & Tools -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h4 class="text-center fw-bold mb-4 text-danger">Database & Tools</h4>
+              
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-medium">
+                    <i class="fas fa-database text-danger me-2"></i> MongoDB
+                  </span>
+                  <span class="text-muted">75%</span>
+                </div>
+                <div class="progress" style="height: 8px;">
+                  <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 75%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-medium">
+                    <i class="fab fa-git-alt text-dark me-2"></i> Git
+                  </span>
+                  <span class="text-muted">80%</span>
+                </div>
+                <div class="progress" style="height: 8px;">
+                  <div class="progress-bar bg-dark progress-bar-striped" role="progressbar" style="width: 80%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item mb-3">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-medium">
+                    <i class="fab fa-npm text-danger me-2"></i> npm/yarn
+                  </span>
+                  <span class="text-muted">85%</span>
+                </div>
+                <div class="progress" style="height: 8px;">
+                  <div class="progress-bar bg-danger progress-bar-striped" role="progressbar" style="width: 85%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="d-flex justify-content-between mb-2">
+                  <span class="fw-medium">
+                    <i class="fas fa-terminal text-secondary me-2"></i> CLI
+                  </span>
+                  <span class="text-muted">70%</span>
+                </div>
+                <div class="progress" style="height: 8px;">
+                  <div class="progress-bar bg-secondary progress-bar-striped" role="progressbar" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects">
+  <section id="projects" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Projects</h2>
-      <div class="row">
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <h2 class="text-primary fw-bold">My Projects</h2>
+        <p class="text-muted">Some of my recent work</p>
+      </div>
+      
+      <div class="row g-4">
         <!-- Project 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="./assets/images/Your paragraph text.png" class="card-img-top" alt="E-Commerce Platform" loading="lazy">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+            <div class="position-relative">
+              <img src="./assets/images/stock-vector-week-of-the-days-list-week-day-pie-chart-for-kindergarten-people-learning-concept-for-kids-2183314437.jpg" 
+                   class="card-img-top project-image" 
+                   alt="E-Commerce App"
+                   loading="lazy">
+              <div class="project-overlay"></div>
+            </div>
             <div class="card-body">
-              <h5 class="card-title">E-Commerce Platform</h5>
-              <p class="card-text">A full-stack e-commerce platform built with React, Node.js, Express, and MongoDB.</p>
-              <p class="card-text"><strong>Features:</strong> User authentication, product search, cart functionality.</p>
-              <a href="#" class="btn btn-primary" aria-label="Live Demo of E-Commerce Platform">Live Demo</a>
-              <a href="#" class="btn btn-secondary" aria-label="GitHub Repository of E-Commerce Platform">GitHub</a>
+              <h5 class="card-title fw-bold">E-Commerce App</h5>
+              <p class="card-text text-muted">Full-featured e-commerce platform with product listings, cart functionality, and user authentication.</p>
+              <div class="tech-stack mb-3">
+                <span class="badge bg-primary bg-opacity-10 text-primary me-1 mb-1">React</span>
+                <span class="badge bg-success bg-opacity-10 text-success me-1 mb-1">Node.js</span>
+                <span class="badge bg-warning bg-opacity-10 text-warning me-1 mb-1">MongoDB</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#" target="_blank" class="btn btn-sm btn-outline-primary flex-grow-1 me-2">
+                  <i class="fas fa-eye me-1"></i> Live Demo
+                </a>
+                <a href="#" target="_blank" class="btn btn-sm btn-outline-dark flex-grow-1">
+                  <i class="fab fa-github me-1"></i> Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
         <!-- Project 2 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="./assets/images/DALL·E 2024-12-26 18.09.03 - A clean and modern web application interface showcasing a dynamic workspace finder website. The page includes a navigation bar at the top, a prominent.webp" class="card-img-top" alt="Social Media App" loading="lazy">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+            <div class="position-relative">
+              <img src="./assets/images/DALL·E 2024-12-26 18.09.03 - A clean and modern web application interface showcasing a dynamic workspace finder website. The page includes a navigation bar at the top, a prominent.webp" 
+                   class="card-img-top project-image" 
+                   alt="Task Manager"
+                   loading="lazy">
+              <div class="project-overlay"></div>
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Social Media App</h5>
-              <p class="card-text">A MERN stack social media application with real-time updates.</p>
-              <p class="card-text"><strong>Features:</strong> User profiles, posts, comments, likes, and notifications.</p>
-              <a href="#" class="btn btn-primary" aria-label="Live Demo of Social Media App">Live Demo</a>
-              <a href="#" class="btn btn-secondary" aria-label="GitHub Repository of Social Media App">GitHub</a>
+              <h5 class="card-title fw-bold">Task Manager</h5>
+              <p class="card-text text-muted">Productivity application for managing tasks with drag-and-drop functionality.</p>
+              <div class="tech-stack mb-3">
+                <span class="badge bg-primary bg-opacity-10 text-primary me-1 mb-1">React</span>
+                <span class="badge bg-info bg-opacity-10 text-info me-1 mb-1">Redux</span>
+                <span class="badge bg-secondary bg-opacity-10 text-secondary me-1 mb-1">Firebase</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#" target="_blank" class="btn btn-sm btn-outline-primary flex-grow-1 me-2">
+                  <i class="fas fa-eye me-1"></i> Live Demo
+                </a>
+                <a href="#" target="_blank" class="btn btn-sm btn-outline-dark flex-grow-1">
+                  <i class="fab fa-github me-1"></i> Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
         <!-- Project 3 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="./assets/images/stock-vector-week-of-the-days-list-week-day-pie-chart-for-kindergarten-people-learning-concept-for-kids-2183314437.jpg" class="card-img-top" alt="Task Management App" loading="lazy">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card project-card h-100 border-0 shadow-sm overflow-hidden">
+            <div class="position-relative">
+              <img src="./assets/images/Your paragraph text.png" 
+                   class="card-img-top project-image" 
+                   alt="Weather App"
+                   loading="lazy">
+              <div class="project-overlay"></div>
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Task Management App</h5>
-              <p class="card-text">A task management app built with React, Node.js, and MongoDB.</p>
-              <p class="card-text"><strong>Features:</strong> Task creation, editing, and deletion; user authentication.</p>
-              <a href="#" class="btn btn-primary" aria-label="Live Demo of Task Management App">Live Demo</a>
-              <a href="#" class="btn btn-secondary" aria-label="GitHub Repository of Task Management App">GitHub</a>
+              <h5 class="card-title fw-bold">Weather App</h5>
+              <p class="card-text text-muted">Real-time weather application with location detection and forecast data.</p>
+              <div class="tech-stack mb-3">
+                <span class="badge bg-primary bg-opacity-10 text-primary me-1 mb-1">React</span>
+                <span class="badge bg-success bg-opacity-10 text-success me-1 mb-1">API</span>
+                <span class="badge bg-info bg-opacity-10 text-info me-1 mb-1">Geolocation</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="#" target="_blank" class="btn btn-sm btn-outline-primary flex-grow-1 me-2">
+                  <i class="fas fa-eye me-1"></i> Live Demo
+                </a>
+                <a href="#" target="_blank" class="btn btn-sm btn-outline-dark flex-grow-1">
+                  <i class="fab fa-github me-1"></i> Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Certifications Section -->
-  <section id="certifications" class="bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">Certifications</h2>
-      <div class="row">
-        <!-- Certification 1 -->
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <img src="./assets/images/Injarapu Sriram.png" class="card-img-top" alt="Fullstack Development Program Certificate" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Fullstack Development Program</h5>
-              <p class="card-text">Completed an intensive Fullstack Development Program, gaining expertise in building end-to-end web applications using the MERN stack (MongoDB, Express.js, React, Node.js).</p>
-              <a href="#" class="btn btn-primary" aria-label="View Fullstack Development Program Certificate">View Certificate</a>
-            </div>
-          </div>
-        </div>
-        <!-- Certification 2 -->
-        <div class="col-md-6 mb-4">
-          <div class="card h-100">
-            <img src="./assets/images/AI.jpeg" class="card-img-top" alt="Freedom with AI Masterclass Certificate" loading="lazy">
-            <div class="card-body">
-              <h5 class="card-title">Freedom with AI Masterclass</h5>
-              <p class="card-text">Participated in the Freedom with AI Masterclass, where I learned to integrate AI and machine learning into web applications.</p>
-              <a href="#" class="btn btn-primary" aria-label="View Freedom with AI Masterclass Certificate">View Certificate</a>
-            </div>
-          </div>
-        </div>
+      
+      <div class="text-center mt-5" data-aos="fade-up">
+        <a href="#" class="btn btn-primary px-4 py-2">
+          <i class="fas fa-arrow-right me-2"></i> View All Projects
+        </a>
       </div>
-    </div>
-  </section>
-
-  <!-- Call-to-Action Section -->
-  <section class="cta-section text-white text-center bg-primary">
-    <div class="container">
-      <h2 class="mb-4">Let's Build Something Amazing Together</h2>
-      <p class="lead">I'm actively looking for new opportunities. Let's connect!</p>
-      <a href="#contact" class="btn btn-light btn-lg" aria-label="Get in Touch">Get in Touch</a>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="bg-light">
+  <section id="contact" class="contact-section py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Contact Me</h2>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" aria-describedby="nameHelp" required>
-          <div id="nameHelp" class="form-text">Please enter your full name.</div>
+      <div class="section-header text-center mb-5" data-aos="fade-up">
+        <h2 class="text-primary fw-bold">Get In Touch</h2>
+        <p class="text-muted">Have a project in mind? Let's talk!</p>
+      </div>
+
+      <div class="row g-5 justify-content-center">
+        <!-- Contact Form -->
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="fw-bold mb-4">Send Me a Message</h3>
+              
+              <form id="contactForm">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Your message..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100 py-3">
+                  <i class="fas fa-paper-plane me-2"></i> Send Message
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body p-4 p-md-5">
+              <h3 class="fw-bold mb-4">Contact Information</h3>
+              
+              <div class="contact-info-item mb-4">
+                <div class="d-flex align-items-center">
+                  <div class="contact-icon bg-primary bg-opacity-10 text-primary me-3">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-semibold mb-1">Email</h5>
+                    <a href="mailto: sriram.mernstack@gmail.com" class="text-decoration-none">sriram.mernstack@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="contact-info-item mb-4">
+                <div class="d-flex align-items-center">
+                  <div class="contact-icon bg-success bg-opacity-10 text-success me-3">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-semibold mb-1">Phone</h5>
+                    <a href="tel:+918374482572" class="text-decoration-none">+911234567890</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="contact-info-item mb-4">
+                <div class="d-flex align-items-center">
+                  <div class="contact-icon bg-info bg-opacity-10 text-info me-3">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <h5 class="fw-semibold mb-1">Location</h5>
+                    <p>Hyderabad, India</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mt-5">
+                <h5 class="fw-semibold mb-3">Follow Me</h5>
+                <div class="d-flex gap-3">
+                  <a href="#" class="social-icon" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="#" class="social-icon" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="social-icon" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="social-icon" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="5" aria-describedby="messageHelp" required></textarea>
-          <div id="messageHelp" class="form-text">Feel free to ask me anything!</div>
-        </div>
-        <button type="submit" class="btn btn-primary">Send Message</button>
-      </form>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer text-white text-center py-3 bg-dark">
+  <footer class="py-5 bg-dark text-white">
     <div class="container">
-      <p>&copy; 2025 Sriram Injarapu. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://github.com/sriram507" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/sriram-injarapu-917246234/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://your-portfolio.com" target="_blank" rel="noopener noreferrer" aria-label="Portfolio"><i class="fas fa-globe"></i></a>
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-0">&copy; <span id="currentYear"></span> [Sriram Injarapu]. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+          <a href="#" class="text-white text-decoration-none">Terms of Service</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  <!-- Smooth Scroll -->
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  
+  <!-- Custom JS -->
   <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+    // Initialize AOS animation
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+    
+    // Typing animation
+    document.addEventListener('DOMContentLoaded', function() {
+      const typed = new Typed('#typing-text', {
+        strings: ['MERN Stack Developer', 'JavaScript Enthusiast', 'Problem Solver', 'Web Developer'],
+        typeSpeed: 50,
+        backSpeed: 30,
+        loop: true
       });
     });
+    
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+    
+    // Set current year in footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    
+    // Form submission handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+      
+      submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending...';
+      submitBtn.disabled = true;
+      
+      // Simulate form submission
+      setTimeout(() => {
+        submitBtn.innerHTML = '<i class="fas fa-check me-2"></i>Message Sent!';
+        
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          this.reset();
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+        }, 3000);
+      }, 2000);
+    });
   </script>
-  <!-- Custom JS -->
-  <script src="script.js"></script>
 </body>
 </html>
-
-
-
