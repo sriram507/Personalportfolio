@@ -341,6 +341,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* About Content */
+
 .about-content {
   position: relative;
   z-index: 2;
@@ -390,9 +391,13 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.3;
 }
 
+.custom-gap {
+  margin-top: 30px;
+}
 
 
 /* Skills Section */
+
 .skills-container {
   margin-top: 3rem;
 }
@@ -430,6 +435,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
   background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
   transition: width 1.2s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.custom-gap {
+  margin-top: 60px;
 }
 
 /* Responsive Design */
@@ -540,6 +549,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--bs-primary);
 }
 
+.custom-gap {
+  margin-top: 30px;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 991.98px) {
   .certification-card .card-title {
@@ -595,26 +608,47 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== Projects Section ===== */
+
 .project-card {
   border-radius: var(--border-radius);
   overflow: hidden;
-  transition: var(--transition);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: var(--shadow);
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: var(--shadow-hover);
 }
 
 .project-image {
-  height: 200px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
-  transition: var(--transition);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  transition: transform 0.3s ease;
 }
 
 .project-card:hover .project-image {
   transform: scale(1.03);
+}
+
+/* Overlay for image darkening on hover */
+.project-card .position-relative {
+  position: relative;
+}
+
+.project-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.project-card:hover .project-overlay {
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .tech-stack .badge {
@@ -622,6 +656,24 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 10px;
   border-radius: 6px;
 }
+
+
+.custom-gap {
+  margin-top: 30px;
+}
+
+
+/* Responsive buttons stacking */
+@media (max-width: 575.98px) {
+  .project-card .d-flex {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .project-card .btn {
+    width: 100%;
+  }
+}
+
 
 /* ===== Contact Section ===== */
 .contact-section {
